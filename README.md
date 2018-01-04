@@ -9,6 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
+gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'mod_bootstrap'
 ```
@@ -19,6 +20,7 @@ And then execute:
 
 Or install it yourself as:
 
+    $ gem install jquery-rails
     $ gem install bootstrap-sass
     $ gem install mod_bootstrap
 
