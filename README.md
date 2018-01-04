@@ -9,6 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
+gem 'bootstrap-sass'
 gem 'mod_bootstrap'
 ```
 
@@ -18,12 +19,31 @@ And then execute:
 
 Or install it yourself as:
 
+    $ gem install bootstrap-sass
     $ gem install mod_bootstrap
 
 ## Usage
 
-TODO: Write usage instructions here
+Import Bootstrap styles in `app/assets/stylesheets/application.scss`:
 
+```scss
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "mod_bootstrap";
+```
+
+Require Bootstrap Javascripts in `app/assets/javascripts/application.js`:
+
+```js
+//= require jquery
+//= require bootstrap-sprockets
+```
+
+`bootstrap-sprockets` and `bootstrap` [should not both be included](https://github.com/twbs/bootstrap-sass/issues/829#issuecomment-75153827) in `application.js`.
+
+`bootstrap-sprockets` provides individual Bootstrap Javascript files (`alert.js` or `dropdown.js`, for example), while
+`bootstrap` provides a concatenated file containing all Bootstrap Javascripts.
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
