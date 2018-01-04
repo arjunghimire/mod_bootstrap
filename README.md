@@ -62,7 +62,7 @@ To modify button and form layout
 <button class="btn rd-btn primary-btn"> Round Button</button>
 
 ```
-
+More features coming soon !!!
 
 ## Development
 
