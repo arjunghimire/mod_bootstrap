@@ -46,6 +46,24 @@ Require Bootstrap Javascripts in `app/assets/javascripts/application.js`:
 
 `bootstrap-sprockets` provides individual Bootstrap Javascript files (`alert.js` or `dropdown.js`, for example), while
 `bootstrap` provides a concatenated file containing all Bootstrap Javascripts.
+
+To modify button and form layout 
+```html
+<div class="form-group">
+  <input type="text" class="default-form-control">
+</div>
+<button class="btn unfil-primary-btn">Unfil Primary Button</button>
+<button class="btn default-btn">Default Button</button>
+<button class="btn primary-btn">Primary Button</button>
+<button class="btn success-btn">Success Button</button>
+<button class="btn info-btn">Info Button</button>
+<button class="btn danger-btn">Danger Button</button>
+<button class="btn rec-btn primary-btn"> Rectangle Button</button>
+<button class="btn rd-btn primary-btn"> Round Button</button>
+
+```
+
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
